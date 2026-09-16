@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 
-<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>FRENEZETA</title>
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>frenezeta</title>
 
 <style>
-    @font-face {
-        font-family: "Perfect DOS VGA 437";
-        src: url("Perfect_DOS_VGA_437.ttf") format("truetype");
-    }
-
     * {
         box-sizing: border-box;
     }
@@ -19,18 +14,28 @@
     }
 
     body {
-        background: #008000;
+        background: #00FA9A;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
     }
 
-    #frenezeta {
-        color: #9932CC;
-        font-family: "Perfect DOS VGA 437", "Courier New", monospace;
-        font-size: clamp(40px, 10vw, 140px);
+    .container {
         text-align: center;
+        font-family: "Courier", "Courier New", monospace;
+    }
+
+    .frenezeta {
+        color: #9932CC;
+        font-size: clamp(40px, 10vw, 140px);
+        letter-spacing: 2px;
+    }
+
+    .musico {
+        color: #FFD700;
+        font-size: clamp(25px, 5vw, 70px);
+        margin-top: 10px;
         letter-spacing: 2px;
     }
 </style>
@@ -39,6 +44,9 @@
 
 <body>
 
-<div id="frenezeta">FRENEZETA</div>
+<div class="container">
+    <div class="frenezeta">frenezeta</div>
+    <div class="musico">musico</div>
+</div>
 
 </body> </html>
